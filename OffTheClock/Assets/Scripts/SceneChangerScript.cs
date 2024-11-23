@@ -9,7 +9,7 @@ public class SceneChangerScript : MonoBehaviour
     public void ChangeScene(int buildIndex)
     {
 
-        SceneManager.LoadScene(buildIndex);
+        SceneManager.LoadScene("World");
 
     }
 
