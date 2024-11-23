@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
     void CheckGround()
     {
         grounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundMask).Length > 0;
-        if (grounded && !canDoubleJump) canDoubleJump = true;
+        if (grounded) canDoubleJump = false;
     }
 
     void ApplyFriction()
