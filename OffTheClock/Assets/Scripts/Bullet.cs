@@ -21,12 +21,5 @@ public class Bullet : MonoBehaviour
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
         float rot = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rot + 90);
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
