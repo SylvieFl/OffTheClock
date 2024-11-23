@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,10 +11,15 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundMask;
     public float groundSpeed;
     public float jumpSpeed;
+    [Range(0f, 100f)] public float dashForce;
     [Range(0f, 1f)] public float groundDecay;
     [Range(0f, 1f)] public float gravityDecay;
-    //public float drag;
+    [Range(0f, 1f)] public float dashWaitTime;
+
     private bool grounded;
+    private bool canDoubleJump;
+    private bool inControl = true;
+
 
     float xInput;
     float yInput;
@@ -20,8 +27,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetInput();
-        MoveWithInput();
+        if (inControl)
+        {
+            GetInput();
+            MoveWithInput();
+        }
     }
 
     private void FixedUpdate()
@@ -34,6 +44,34 @@ public class PlayerMovement : MonoBehaviour
     {
         xInput = Input.GetAxis("Horizontal");
         yInput = Input.GetAxis("Jump");
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDoubleJump && !grounded && (xInput != 0 || yInput != 0))
+        {
+            //Debug.Log("h");
+            //body.AddForce(Vector2.right * 10, ForceMode2D.Impulse);
+            //xInput *= 10;
+            //canDoubleJump = false;
+            Dash(xInput);
+        }
+    }
+
+    void Dash(float input)
+    {
+        xInput = 0;
+        yInput = 0;
+        body.gravityScale = 0;
+        gravityDecay = 0;
+        body.AddForce(new Vector2(input, 0) * dashForce, ForceMode2D.Impulse);
+        canDoubleJump = false;
+        inControl = false;
+
+        StartCoroutine(waiter());
+
+        //StartCoroutine(Countdown2());
+        //gravityDecay = 1;
+        //body.gravityScale = 3;
+        //body.gravityScale = Mathf.Lerp(0, 3, 1f);
+        //gravityDecay = Mathf.Lerp(0, 1, 1f);
     }
 
     void MoveWithInput()
@@ -52,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
     void CheckGround()
     {
         grounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundMask).Length > 0;
+        if (grounded && !canDoubleJump) canDoubleJump = true;
     }
 
     void ApplyFriction()
@@ -62,5 +101,13 @@ public class PlayerMovement : MonoBehaviour
             body.velocity = new Vector2(body.velocity.x * groundDecay, body.velocity.y);
             body.velocity = new Vector2(body.velocity.x, body.velocity.y * gravityDecay);
         }
+    }
+    IEnumerator waiter()
+    {
+        yield return new WaitForSeconds(dashWaitTime);
+
+        body.gravityScale = 3;
+        gravityDecay = 1;
+        inControl = true;
     }
 }
