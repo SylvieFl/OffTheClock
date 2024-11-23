@@ -8,7 +8,8 @@ public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
     public float timeRemaining;
-    
+
+    public GameOver gameOverScript;
    
     // Update is called once per frame
     void Update()
@@ -40,6 +41,7 @@ public class Timer : MonoBehaviour
         if (timeRemaining < 0)
         {
             timerText.text = "00:00";
+            gameOverScript.GameOverUI();
 
             //Add Game Over UI
         }
