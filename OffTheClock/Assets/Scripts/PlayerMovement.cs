@@ -16,9 +16,10 @@ public class PlayerMovement : MonoBehaviour
     [Range(0f, 1f)] public float gravityDecay;
     [Range(0f, 1f)] public float dashWaitTime;
 
-    private bool grounded;
-    private bool canDoubleJump;
-    private bool inControl = true;
+    public bool grounded;
+    public bool canDoubleJump;
+    public bool canDash = false;
+    public bool inControl = true;
 
 
     float xInput;
@@ -45,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         xInput = Input.GetAxis("Horizontal");
         yInput = Input.GetAxis("Jump");
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDoubleJump && !grounded && (xInput != 0 || yInput != 0))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !grounded && (xInput != 0 || yInput != 0))
         {
             Dash(xInput);
         }
@@ -58,8 +59,8 @@ public class PlayerMovement : MonoBehaviour
         body.gravityScale = 0;
         gravityDecay = 0;
         body.AddForce(new Vector2(input, 0) * dashForce, ForceMode2D.Impulse);
-        canDoubleJump = false;
         inControl = false;
+        canDash = false;
 
         StartCoroutine(waiter());
     }
@@ -71,9 +72,18 @@ public class PlayerMovement : MonoBehaviour
             body.velocity = new Vector2(xInput * groundSpeed, body.velocity.y);
         }
 
-        if (Mathf.Abs(yInput) > 0 && grounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
+            if (grounded)
+            {
+                body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
+            }
+            else if (canDoubleJump)
+            {
+                body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
+                canDoubleJump = false;
+            }
+
         }
     }
 
