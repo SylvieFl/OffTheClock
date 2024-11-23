@@ -1,0 +1,1067 @@
+fileFormatVersion: 2
+guid: c170ca2e7d9d15f4cbcadff3ee68ce75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3660564522253421140
+    second: Tileset (Blue)_0
+  - first:
+      213: -3011843201477412228
+    second: Tileset (Blue)_1
+  - first:
+      213: 7630788755575419774
+    second: Tileset (Blue)_2
+  - first:
+      213: -8866093898461103270
+    second: Tileset (Blue)_3
+  - first:
+      213: 5048422829815671357
+    second: Tileset (Blue)_4
+  - first:
+      213: 1638133920636083294
+    second: Tileset (Blue)_5
+  - first:
+      213: 6516269405246414375
+    second: Tileset (Blue)_6
+  - first:
+      213: 4677112226831529123
+    second: Tileset (Blue)_7
+  - first:
+      213: 1196104064810601018
+    second: Tileset (Blue)_8
+  - first:
+      213: 4037619513894236648
+    second: Tileset (Blue)_9
+  - first:
+      213: 7676916186696659503
+    second: Tileset (Blue)_10
+  - first:
+      213: -4167850003594443236
+    second: Tileset (Blue)_11
+  - first:
+      213: -1730523930243378831
+    second: Tileset (Blue)_12
+  - first:
+      213: -6766311657237814641
+    second: Tileset (Blue)_13
+  - first:
+      213: 7770204577071066930
+    second: Tileset (Blue)_14
+  - first:
+      213: -2909789938747244456
+    second: Tileset (Blue)_15
+  - first:
+      213: -7057445553644985473
+    second: Tileset (Blue)_16
+  - first:
+      213: 3408101726796379881
+    second: Tileset (Blue)_17
+  - first:
+      213: 6387479228764344476
+    second: Tileset (Blue)_18
+  - first:
+      213: 8279159718670109913
+    second: Tileset (Blue)_19
+  - first:
+      213: -1465796302401132894
+    second: Tileset (Blue)_20
+  - first:
+      213: -4016769018091370710
+    second: Tileset (Blue)_21
+  - first:
+      213: 5938347369841643596
+    second: Tileset (Blue)_22
+  - first:
+      213: -8296998647146214461
+    second: Tileset (Blue)_23
+  - first:
+      213: -8010720993611294957
+    second: Tileset (Blue)_24
+  - first:
+      213: -3816063109706741112
+    second: Tileset (Blue)_25
+  - first:
+      213: 1049003089929397743
+    second: Tileset (Blue)_26
+  - first:
+      213: -826670407746900937
+    second: Tileset (Blue)_27
+  - first:
+      213: 6620630319947314655
+    second: Tileset (Blue)_28
+  - first:
+      213: 3614727439983660795
+    second: Tileset (Blue)_29
+  - first:
+      213: 7729262120401270727
+    second: Tileset (Blue)_30
+  - first:
+      213: -8615913212723921988
+    second: Tileset (Blue)_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tileset (Blue)_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 110
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a005ad900fcc230800000000000000
+      internalID: 3660564522253421140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 110
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a73c0d098c336d0800000000000000
+      internalID: -3011843201477412228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e733e1c81f106e960800000000000000
+      internalID: 7630788755575419774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5bb7fce29e45f480800000000000000
+      internalID: -8866093898461103270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3aa227e0d99f0640800000000000000
+      internalID: 5048422829815671357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c18022f12dbb610800000000000000
+      internalID: 1638133920636083294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e5578df707e6a50800000000000000
+      internalID: 6516269405246414375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_7
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4fde63ac078e040800000000000000
+      internalID: 4677112226831529123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3acf694f4a699010800000000000000
+      internalID: 1196104064810601018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_9
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1f9df3e81880830800000000000000
+      internalID: 4037619513894236648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2230860992e98a60800000000000000
+      internalID: 7676916186696659503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_11
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1684a20182d826c0800000000000000
+      internalID: -4167850003594443236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_12
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171d78677a1fbf7e0800000000000000
+      internalID: -1730523930243378831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8261cea56b3912a0800000000000000
+      internalID: -6766311657237814641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_14
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f6f6005ef45db60800000000000000
+      internalID: 7770204577071066930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_15
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85007f9a7795e97d0800000000000000
+      internalID: -2909789938747244456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_16
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73a45139aaee0e90800000000000000
+      internalID: -7057445553644985473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_17
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6f710b6720c4f20800000000000000
+      internalID: 3408101726796379881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_18
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c905fa82482e4a850800000000000000
+      internalID: 6387479228764344476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_19
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 42
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc0e0636eb75e270800000000000000
+      internalID: 8279159718670109913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_20
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 42
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6ac42770278abe0800000000000000
+      internalID: -1465796302401132894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 42
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a278edb1cd19148c0800000000000000
+      internalID: -4016769018091370710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_22
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40594c587f396250800000000000000
+      internalID: 5938347369841643596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_23
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb04f690b32bdc80800000000000000
+      internalID: -8296998647146214461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_24
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317d80de2b334d090800000000000000
+      internalID: -8010720993611294957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_25
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a0571f1de9a0bc0800000000000000
+      internalID: -3816063109706741112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_26
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5678f90cece8e00800000000000000
+      internalID: 1049003089929397743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_27
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c2befd4a31784f0800000000000000
+      internalID: -826670407746900937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_28
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 25
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5f3a9c23431eb50800000000000000
+      internalID: 6620630319947314655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_29
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe451c74771a2230800000000000000
+      internalID: 3614727439983660795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_30
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7766672fad34b60800000000000000
+      internalID: 7729262120401270727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_31
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbfef305902e6880800000000000000
+      internalID: -8615913212723921988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_32
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e0a322c185b4e40bfb054f737e4e45
+      internalID: 1387697302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_33
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f534382776a5f84aa98fc556fdd3425
+      internalID: 1167428158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_34
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1fb2f035eba3f841a000d05b7a2bb70
+      internalID: 1945943756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset (Blue)_35
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f74581014e696348b17804891c04cb7
+      internalID: -1228736335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 18d1451c3bc2ae6498143a835269fa04
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tileset (Blue)_0: 3660564522253421140
+      Tileset (Blue)_1: -3011843201477412228
+      Tileset (Blue)_10: 7676916186696659503
+      Tileset (Blue)_11: -4167850003594443236
+      Tileset (Blue)_12: -1730523930243378831
+      Tileset (Blue)_13: -6766311657237814641
+      Tileset (Blue)_14: 7770204577071066930
+      Tileset (Blue)_15: -2909789938747244456
+      Tileset (Blue)_16: -7057445553644985473
+      Tileset (Blue)_17: 3408101726796379881
+      Tileset (Blue)_18: 6387479228764344476
+      Tileset (Blue)_19: 8279159718670109913
+      Tileset (Blue)_2: 7630788755575419774
+      Tileset (Blue)_20: -1465796302401132894
+      Tileset (Blue)_21: -4016769018091370710
+      Tileset (Blue)_22: 5938347369841643596
+      Tileset (Blue)_23: -8296998647146214461
+      Tileset (Blue)_24: -8010720993611294957
+      Tileset (Blue)_25: -3816063109706741112
+      Tileset (Blue)_26: 1049003089929397743
+      Tileset (Blue)_27: -826670407746900937
+      Tileset (Blue)_28: 6620630319947314655
+      Tileset (Blue)_29: 3614727439983660795
+      Tileset (Blue)_3: -8866093898461103270
+      Tileset (Blue)_30: 7729262120401270727
+      Tileset (Blue)_31: -8615913212723921988
+      Tileset (Blue)_32: 1387697302
+      Tileset (Blue)_33: 1167428158
+      Tileset (Blue)_34: 1945943756
+      Tileset (Blue)_35: -1228736335
+      Tileset (Blue)_4: 5048422829815671357
+      Tileset (Blue)_5: 1638133920636083294
+      Tileset (Blue)_6: 6516269405246414375
+      Tileset (Blue)_7: 4677112226831529123
+      Tileset (Blue)_8: 1196104064810601018
+      Tileset (Blue)_9: 4037619513894236648
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
