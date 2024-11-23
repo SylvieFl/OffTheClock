@@ -26,17 +26,18 @@ public class GameOver : MonoBehaviour
         gameOverScreen.SetActive(true);
     }
 
-    public void Restart()
+    public void RestartButton()
     {
 
         SceneManager.LoadScene(2);
 
     }
 
-    public void MainMenu()
+    public void QuitButton()
     {
-
+        
         SceneManager.LoadScene(0);
+        //Application.Quit();
 
     }
 }
