@@ -22,11 +22,20 @@ public class Timer : MonoBehaviour
 
         }
 
-        /*if (timeRemaining < 5 && timeRemaining > 4)
+        if (timeRemaining < 120 && timeRemaining > 119.5)
         {
-            //Debug.Log("text turn red");
-            
-        }*/
+            StartCoroutine(TextColorFlicker());  
+        }
+
+        if (timeRemaining < 60 && timeRemaining > 59.5)
+        {
+            StartCoroutine(TextColorFlicker());
+        }
+
+        if (timeRemaining < 6 && timeRemaining > 5.5)
+        {
+            StartCoroutine(TextColorFlicker());
+        }
 
         if (timeRemaining < 0)
         {
@@ -36,5 +45,44 @@ public class Timer : MonoBehaviour
         }
         
 
+    }
+
+    IEnumerator TextColorFlicker()
+    { 
+        timerText.color = Color.red;
+        timerText.fontSize = 120;
+        Debug.Log("Red");
+
+        yield return new WaitForSeconds(1f);
+
+        timerText.color = Color.white;
+        timerText.fontSize = 100;
+        Debug.Log("White");
+
+        yield return new WaitForSeconds(1f);
+
+        timerText.color = Color.red;
+        timerText.fontSize = 120;
+        Debug.Log("Red");
+
+        yield return new WaitForSeconds(1f);
+
+        timerText.color = Color.white;
+        timerText.fontSize = 100;
+        Debug.Log("White");
+
+        yield return new WaitForSeconds(1f);
+
+        timerText.color = Color.red;
+        timerText.fontSize = 120;
+        Debug.Log("Red");
+
+        yield return new WaitForSeconds(1f);
+
+        timerText.color = Color.white;
+        timerText.fontSize = 100;
+        Debug.Log("White");
+
+        yield return new WaitForSeconds(1f);
     }
 }
