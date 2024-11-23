@@ -24,6 +24,10 @@ public class PlayerMovement : MonoBehaviour
     public bool canDash;
     public bool inControl = true;
 
+    private bool lookingRight = true;
+
+    public Animator animator;
+
 
     float xInput;
     float yInput;
@@ -31,10 +35,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (inControl)
         {
             GetInput();
             MoveWithInput();
+            FlipCharacter();
+            animator.SetFloat("Speed", Mathf.Abs(xInput));
         }
     }
 
@@ -122,5 +129,27 @@ public class PlayerMovement : MonoBehaviour
         gravityDecay = 1;
         inControl = true;
         trailRenderer.emitting = false;
+    }
+
+    private void FlipCharacter()
+    {
+
+        if (body.velocity.x < 0 && lookingRight)
+        {
+            Flip();
+        }
+        else if (body.velocity.x > 0 && !lookingRight)
+        {
+            Flip();
+        }
+    
+    }
+
+    private void Flip()
+    { 
+    
+        lookingRight = !lookingRight;
+        transform.Rotate(0, 180, 0);
+
     }
 }

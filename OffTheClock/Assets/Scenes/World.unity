@@ -388,6 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 930707104}
   groundCheck: {fileID: 443226254}
+  trailRenderer: {fileID: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 128
@@ -397,6 +398,11 @@ MonoBehaviour:
   groundDecay: 0.875
   gravityDecay: 1
   dashWaitTime: 0.152
+  grounded: 0
+  canDoubleJump: 0
+  canDash: 0
+  inControl: 1
+  animator: {fileID: 930707108}
 --- !u!212 &930707107
 SpriteRenderer:
   m_ObjectHideFlags: 0
