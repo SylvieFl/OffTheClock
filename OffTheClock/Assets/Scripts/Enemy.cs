@@ -7,17 +7,42 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void Hit()
+    void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            PlayerMovement playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
 
+            if (playerMovement != null)
+            {
+                playerMovement.canDash = true;
+                //Debug.Log(playerMovement.canDash);
+                Destroy(gameObject);
+            }
+        }
     }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Bullet"))
+    //    {
+    //        PlayerMovement playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
+
+    //        if (playerMovement != null)
+    //        {
+    //            playerMovement.canDash = true;
+    //            Debug.Log(playerMovement.canDash);
+    //            //Destroy(gameObject);
+    //        }
+    //    }
+    //}
 }

@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool grounded;
     public bool canDoubleJump;
-    public bool canDash = false;
+    public bool canDash;
     public bool inControl = true;
 
 

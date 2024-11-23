@@ -22,7 +22,7 @@ public class DoubleJump : MonoBehaviour
 
         if (playerMovement != null )
         {
-            playerMovement.canDash = true;
+            playerMovement.canDoubleJump = true;
             Destroy(gameObject);
         }
     }
