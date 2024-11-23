@@ -20,6 +20,9 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
+            //Rigidbody2D rigidbody = collision.GetComponent<Rigidbody2D>();
+            //rigidbody.velocity = Vector2.zero;
+            //collision.transform.position = transform.position;
             PlayerMovement playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
 
             if (playerMovement != null)

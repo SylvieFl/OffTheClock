@@ -8,8 +8,11 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D body;
     public BoxCollider2D groundCheck;
+    public TrailRenderer trailRenderer;
     public LayerMask groundMask;
     public float groundSpeed;
+
+
     public float jumpSpeed;
     [Range(0f, 100f)] public float dashForce;
     [Range(0f, 1f)] public float groundDecay;
@@ -61,6 +64,11 @@ public class PlayerMovement : MonoBehaviour
         body.AddForce(new Vector2(input, 0) * dashForce, ForceMode2D.Impulse);
         inControl = false;
         canDash = false;
+        trailRenderer.emitting = true;
+        Vector3 currentScale = transform.localScale;
+        currentScale.x = 1.25f;
+        currentScale.y = 0.75f;
+        transform.localScale = currentScale;
 
         StartCoroutine(waiter());
     }
@@ -105,8 +113,14 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(dashWaitTime);
 
+        Vector3 currentScale = transform.localScale;
+        currentScale.x = 1.0f;
+        currentScale.y = 1.0f;
+        transform.localScale = currentScale;
+
         body.gravityScale = 3;
         gravityDecay = 1;
         inControl = true;
+        trailRenderer.emitting = false;
     }
 }
