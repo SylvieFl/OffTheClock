@@ -47,10 +47,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDoubleJump && !grounded && (xInput != 0 || yInput != 0))
         {
-            //Debug.Log("h");
-            //body.AddForce(Vector2.right * 10, ForceMode2D.Impulse);
-            //xInput *= 10;
-            //canDoubleJump = false;
             Dash(xInput);
         }
     }
@@ -66,12 +62,6 @@ public class PlayerMovement : MonoBehaviour
         inControl = false;
 
         StartCoroutine(waiter());
-
-        //StartCoroutine(Countdown2());
-        //gravityDecay = 1;
-        //body.gravityScale = 3;
-        //body.gravityScale = Mathf.Lerp(0, 3, 1f);
-        //gravityDecay = Mathf.Lerp(0, 1, 1f);
     }
 
     void MoveWithInput()
@@ -97,7 +87,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (xInput == 0 && yInput == 0)
         {
-            //body.velocity *= groundDecay;
             body.velocity = new Vector2(body.velocity.x * groundDecay, body.velocity.y);
             body.velocity = new Vector2(body.velocity.x, body.velocity.y * gravityDecay);
         }
