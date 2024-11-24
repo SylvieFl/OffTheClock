@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 750197616530364378}
   m_Layer: 6
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,7 +225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1133618267863777785
 Transform:
   m_ObjectHideFlags: 0
@@ -262,7 +262,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 128
-  groundSpeed: 5
+  groundSpeed: 8
   jumpSpeed: 15
   dashForce: 23
   groundDecay: 0.875
@@ -273,6 +273,7 @@ MonoBehaviour:
   canDash: 0
   inControl: 1
   animator: {fileID: 806908728839217290}
+  noDash: {fileID: 0}
   health: 3
 --- !u!50 &2230350131632333902
 Rigidbody2D:
@@ -490,7 +491,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_MaskInteraction: 0
   m_Autodestruct: 0
-  m_Emitting: 1
+  m_Emitting: 0
   m_ApplyActiveColorSpace: 1
 --- !u!1 &8136468672705934429
 GameObject:
