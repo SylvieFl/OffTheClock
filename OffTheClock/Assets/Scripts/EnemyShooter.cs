@@ -10,6 +10,7 @@ public class EnemyShooter : MonoBehaviour
     public GameObject EnemyBullet;
     private bool ableToShoot = true;
     public Animator animator;
+    public AudioSource shootSound;
 
     public int health = 5;
 
@@ -31,6 +32,7 @@ public class EnemyShooter : MonoBehaviour
             //Debug.Log("g");
             Instantiate(EnemyBullet, transform.position + (direction.normalized * 3), Quaternion.identity);
             StartCoroutine(waiter());
+            shootSound.Play();
         }
 
         if (health < 1)

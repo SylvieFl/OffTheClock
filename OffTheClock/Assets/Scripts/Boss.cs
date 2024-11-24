@@ -15,6 +15,7 @@ public class Boss : MonoBehaviour
     private float laserLevel = 1f;
     private bool hasPosition = false;
     public Vector3 previousPlayerPosition;
+    public AudioSource laserSound;
 
     public int health = 5;
 
@@ -52,6 +53,7 @@ public class Boss : MonoBehaviour
             if (laserLevel < -0.3 && canFire)
             {
                 //Debug.Log("FIRE");
+                laserSound.Play();
                 Instantiate(BossBullet, transform.position + (direction.normalized * 3), Quaternion.identity);
                 canFire = false;
             }
