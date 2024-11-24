@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Windows;
 
 public class EnemyShooter : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class EnemyShooter : MonoBehaviour
     public LayerMask layerMask;
     public GameObject EnemyBullet;
     private bool ableToShoot = true;
+    public Animator animator;
     void Start()
     {
         
@@ -35,9 +37,11 @@ public class EnemyShooter : MonoBehaviour
 
     IEnumerator waiter()
     {
+        animator.SetBool("IsShooting", true);
         ableToShoot = false;
         yield return new WaitForSeconds(2.0f);
 
         ableToShoot = true;
+        animator.SetBool("IsShooting", false);
     }
 }
