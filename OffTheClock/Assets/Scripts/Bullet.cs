@@ -31,6 +31,11 @@ public class Bullet : MonoBehaviour
             if (collision.gameObject.name == "ShooterEnemy")
             {
                 collision.GetComponent<EnemyShooter>().health -= 1;
+                Color color = collision.GetComponent<SpriteRenderer>().color;
+                //color.r -= 0.1f;
+                color.b -= 0.1f;
+                color.g -= 0.1f;
+                collision.GetComponent<SpriteRenderer>().color = color;
             }
             Destroy(gameObject);
         }
