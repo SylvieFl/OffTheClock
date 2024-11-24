@@ -10,9 +10,13 @@ public class WinScreen : MonoBehaviour
     public RawImage winScreen;
     public Button quitButton;
 
+    public WinScreenAudioManager winningSFX;
+    public AudioClip win;
+
     // Start is called before the first frame update
     void Start()
     {
+        winningSFX.PlayWinSFX(win);
         StartCoroutine(CoFlipFrames());
     }
 
