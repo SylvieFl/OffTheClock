@@ -16,6 +16,16 @@ public class IntroCutscene : MonoBehaviour
     public RawImage frameEight;
     public RawImage frameNine;
 
+    public IntroCutsceneAudioManager introSFX;
+
+    public AudioClip crunch;
+    public AudioClip run;
+    public AudioClip door;
+    public AudioClip lanyard;
+    public AudioClip mask;
+    public AudioClip stapleGunEquip;
+    public AudioClip walk;
+
     public Button buttonOne;
     
     
@@ -43,30 +53,42 @@ public class IntroCutscene : MonoBehaviour
     {
         yield return new WaitForSeconds(3.25f);
         frameOne.enabled = false;
+        introSFX.PlayIntroSFX(walk);
+        yield return new WaitForSeconds(1);
+        introSFX.PlayIntroSFX(crunch);
 
         yield return new WaitForSeconds(3);
         frameTwo.enabled = false;
+        introSFX.PlayIntroSFX(lanyard);
 
         yield return new WaitForSeconds(3);
         frameThree.enabled = false;
 
         yield return new WaitForSeconds(3);
         frameFour.enabled = false;
+        introSFX.PlayIntroSFX(run);
+        yield return new WaitForSeconds(2);
+        introSFX.PlayIntroSFX(door);
 
         yield return new WaitForSeconds(3);
         frameFive.enabled = false;
 
         yield return new WaitForSeconds(3);
         frameSix.enabled = false;
+        introSFX.PlayIntroSFX(mask);
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         frameSeven.enabled = false;
 
         yield return new WaitForSeconds(3);
         frameEight.enabled = false;
+        introSFX.PlayIntroSFX(run);
 
         yield return new WaitForSeconds(3);
         frameNine.enabled = false;
+        introSFX.PlayIntroSFX(stapleGunEquip);
+        yield return new WaitForSeconds(0.25f);
+        introSFX.PlayIntroSFX(run);
 
         yield return new WaitForSeconds(2);
         buttonOne.gameObject.SetActive(true);
