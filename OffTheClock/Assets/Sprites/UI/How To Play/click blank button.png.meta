@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cce6050c182a7ee49939f4b97ffaf763
+guid: 1749951840f6ec14e9a4308c65b383a5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4432082349709267222
-    second: story frames 8_0
+      213: 1747506269829385417
+    second: click blank button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: story frames 8_0
+      name: click blank button_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 761
+        y: 396
+        width: 333
+        height: 183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61113b53a6be18d30800000000000000
-      internalID: 4432082349709267222
+      spriteID: 9ccc2f791b3604810800000000000000
+      internalID: 1747506269829385417
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      story frames 8_0: 4432082349709267222
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
