@@ -39,15 +39,6 @@ public class Timer : MonoBehaviour
 
         }
 
-        if (timeRemaining < 120 && timeRemaining > 119.5)
-        {
-            StartCoroutine(TextColorFlicker());  
-        }
-
-        if (timeRemaining < 60 && timeRemaining > 59.5)
-        {
-            StartCoroutine(TextColorFlicker());
-        }
 
         if (timeRemaining < 6 && timeRemaining > 5.5)
         {
