@@ -134,8 +134,13 @@ public class PlayerMovement : MonoBehaviour
             else if (canDoubleJump)
             {
                 //StopCoroutine(JumpEnd());
-                
+
                 //StopAllCoroutines();
+                Color color = GameObject.Find("CoffeeUI").GetComponent<RawImage>().color;
+                color.r /= 2;
+                color.g /= 2;
+                color.b /= 2;
+                GameObject.Find("CoffeeUI").GetComponent<RawImage>().color = color;
                 animator.SetBool("isJumping", false);
                 StartCoroutine(CoPerformDoubleJump());
                 //StartCoroutine(DoubleJump());
