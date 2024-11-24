@@ -21,7 +21,7 @@ public class DoubleJump : MonoBehaviour
     {
         PlayerMovement playerMovement = collision.GetComponentInParent<PlayerMovement>();
 
-        if (playerMovement != null )
+        if (playerMovement != null && !playerMovement.canDoubleJump)
         {
             playerMovement.canDoubleJump = true;
             GameObject.Find("CoffeeUI").GetComponent<RawImage>().color = Color.white;
