@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
+    public RawImage noDash;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +31,7 @@ public class Enemy : MonoBehaviour
             if (playerMovement != null)
             {
                 playerMovement.canDash = true;
+                noDash.enabled = false;
                 //Debug.Log(playerMovement.canDash);
                 Destroy(gameObject);
             }
