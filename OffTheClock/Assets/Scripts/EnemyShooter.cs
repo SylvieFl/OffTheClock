@@ -37,6 +37,15 @@ public class EnemyShooter : MonoBehaviour
             //Debug.Log(health);
            Destroy(gameObject);
         }
+
+        if (GameObject.Find("Player").transform.position.x > transform.position.x)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
 
     //void ShootPlayer()
