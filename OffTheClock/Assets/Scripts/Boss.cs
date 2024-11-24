@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Hierarchy;
 using UnityEngine;
 using UnityEngine.Windows;
 
@@ -13,6 +14,8 @@ public class Boss : MonoBehaviour
     //public Animator animator;
     public LineRenderer lineRenderer;
     private float laserLevel = 1f;
+    private bool hasPosition = false;
+    public Vector3 previousPlayerPosition;
 
     public int health = 5;
 
@@ -40,6 +43,13 @@ public class Boss : MonoBehaviour
         {
             lineRenderer.startWidth = 0f;
             lineRenderer.endWidth = 0f;
+            if (!hasPosition)
+            {
+                previousPlayerPosition = GameObject.Find("Player").transform.position;
+                hasPosition = true;
+            }
+           
+
             if (laserLevel < -0.3 && canFire)
             {
                 //Debug.Log("FIRE");
@@ -49,6 +59,8 @@ public class Boss : MonoBehaviour
             if (laserLevel < -0.8f)
             {
                 laserLevel = 1f;
+                hasPosition = false;
+                //canFire = false;
             }
         }
         else

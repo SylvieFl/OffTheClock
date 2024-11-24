@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6efff31455bc124c95b626b0466ebcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 81.2
+  force: 71.4
 --- !u!212 &1747853983618718336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -174,7 +174,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 165
-  m_Time: 6.41
+  m_Time: 3.9
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3

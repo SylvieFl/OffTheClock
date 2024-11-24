@@ -44,6 +44,11 @@ public class Bullet : MonoBehaviour
             }
             Destroy(gameObject);
         }
-        
+        else if (collision.gameObject.CompareTag("Boss")) //End the game
+        {
+
+        }
+
+
     }
 }

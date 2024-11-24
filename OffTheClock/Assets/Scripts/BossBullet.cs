@@ -9,13 +9,15 @@ public class BossBullet : MonoBehaviour
     //private Camera mainCam;
     private Rigidbody2D rb;
     public float force;
+    public Vector2 destination;
     // Start is called before the first frame update
     void Start()
     {
         //mainCam = GameObject.
         rb = GetComponent<Rigidbody2D>();
+        //GameObject.Find("Boss").GetComponent<Boss>().previousPlayerPosition
         //mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 direction = GameObject.Find("Player").transform.position - transform.position;
+        Vector2 direction = GameObject.Find("Boss").GetComponent<Boss>().previousPlayerPosition - transform.position;
         //Vector2 rotation = transform.position - mousePos;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
         //float rot = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
