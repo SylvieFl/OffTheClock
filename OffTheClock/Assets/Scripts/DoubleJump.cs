@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DoubleJump : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class DoubleJump : MonoBehaviour
         if (playerMovement != null )
         {
             playerMovement.canDoubleJump = true;
+            GameObject.Find("CoffeeUI").GetComponent<RawImage>().color = Color.white;
             Destroy(gameObject);
         }
     }
