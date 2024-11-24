@@ -29,10 +29,13 @@ public class EnemyShooter : MonoBehaviour
 
         if (ray.collider.gameObject.CompareTag("Player") && ableToShoot)
         {
+            shootSound.Play();
+            animator.SetTrigger("Shoot");
             //Debug.Log("g");
             Instantiate(EnemyBullet, transform.position + (direction.normalized * 3), Quaternion.identity);
             StartCoroutine(waiter());
-            shootSound.Play();
+            
+            //animator.SetBool("IsShooting", false);
         }
 
         if (health < 1)
@@ -58,11 +61,11 @@ public class EnemyShooter : MonoBehaviour
 
     IEnumerator waiter()
     {
-        animator.SetBool("IsShooting", true);
+        //animator.SetBool("IsShooting", true);
         ableToShoot = false;
         yield return new WaitForSeconds(2.0f);
 
         ableToShoot = true;
-        animator.SetBool("IsShooting", false);
+        //animator.SetBool("IsShooting", false);
     }
 }
