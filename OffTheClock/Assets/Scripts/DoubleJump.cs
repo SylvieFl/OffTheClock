@@ -17,7 +17,7 @@ public class DoubleJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inContact && !playerMovement.canDoubleJump)
+        while (inContact && !playerMovement.canDoubleJump)
         {
             //PlayerMovement playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
 
