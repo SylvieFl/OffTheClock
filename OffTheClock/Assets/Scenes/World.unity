@@ -158,6 +158,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1133618267863777785, guid: 198989c86284cbb45841df63c1c6578b, type: 3}
   m_PrefabInstance: {fileID: 1261099230281390851}
   m_PrefabAsset: {fileID: 0}
+--- !u!96 &943058488 stripped
+TrailRenderer:
+  m_CorrespondingSourceObject: {fileID: -2075141652699553889, guid: 198989c86284cbb45841df63c1c6578b, type: 3}
+  m_PrefabInstance: {fileID: 1261099230281390851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1249293638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,7 +1180,7 @@ PrefabInstance:
     - target: {fileID: 5996386097989561389, guid: 198989c86284cbb45841df63c1c6578b, type: 3}
       propertyPath: trailRenderer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 943058488}
     - target: {fileID: 6146875626636753794, guid: 198989c86284cbb45841df63c1c6578b, type: 3}
       propertyPath: m_Name
       value: Player
