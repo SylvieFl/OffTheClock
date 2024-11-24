@@ -20,6 +20,7 @@ public class SceneChangerScript : MonoBehaviour
         //Debug.Log(playerLevel);
 
         SceneManager.LoadScene(levelToChangeTo);
+        GameObject.Find("Player").GetComponent<PlayerMovement>().health = 3;
     }
 
     public void Update()

@@ -14,20 +14,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HowToPlay.unity
     guid: 5d592b9ff19975746b46e5349d7368f6
-  - enabled: 0
-    path: Assets/Scenes/Level1.unity
-    guid: cdca27490bdb43e428471b1c5d034932
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/World.unity
-    guid: 0f85bc09d77e15848bd45e32b98665ae
   - enabled: 1
     path: Assets/Scenes/GreyLevel.unity
     guid: b30353327cfd9ea40bb10cd299f2fdf9
   - enabled: 1
     path: Assets/Scenes/YellowLevel.unity
     guid: 3f62769f24f7874478d19e6434eee9b8
+  - enabled: 1
+    path: Assets/Scenes/RedLevel.unity
+    guid: 1df7d1b8031eba5468b28eb20d1f3a80
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 283ec0875564948458b66f37865c72f4
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
