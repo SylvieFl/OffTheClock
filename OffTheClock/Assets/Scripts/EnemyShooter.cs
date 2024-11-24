@@ -36,7 +36,7 @@ public class EnemyShooter : MonoBehaviour
         if (health < 1)
         {
             //Debug.Log(health);
-           Destroy(gameObject);
+            Destroy(gameObject);
         }
 
         if (GameObject.Find("Player").transform.position.x > transform.position.x)

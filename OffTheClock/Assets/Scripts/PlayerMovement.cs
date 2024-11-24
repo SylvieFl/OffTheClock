@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
         xInput = Input.GetAxis("Horizontal");
         yInput = Input.GetAxis("Jump");
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !grounded && (xInput != 0 || yInput != 0))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             Dash(xInput);
         }
@@ -82,7 +82,15 @@ public class PlayerMovement : MonoBehaviour
         body.gravityScale = 0;
         gravityDecay = 0;
         animator.SetBool("isDashing", true);
-        body.AddForce(new Vector2(input, 0) * dashForce, ForceMode2D.Impulse);
+        if (GetComponent<SpriteRenderer>().flipX)
+        {
+            body.AddForce(new Vector2(-1, 0) * dashForce, ForceMode2D.Impulse);
+        }
+        else
+        {
+            body.AddForce(new Vector2(1, 0) * dashForce, ForceMode2D.Impulse);
+        }
+        
         inControl = false;
         canDash = false;
         noDash.enabled = true;
@@ -139,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
         if (grounded)
         {
             //Debug.Log("grounded: ");
-            canDoubleJump = false;
+            //canDoubleJump = false;
             animator.SetBool("isJumping", false);
         }
     }
