@@ -9,9 +9,24 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI timerText;
     public float timeRemaining;
 
+    public RawImage minuteHand;
+    public float totalFramesPerSecond;
+    public float zRotate;
+    //public Vector3 rotatePerFrame;
+
     public GameOver gameOverScript;
-   
-    // Update is called once per frame
+
+    private void Start()
+    {
+        //totalFramesPerSecond = timeRemaining * 144;
+        zRotate = 360/timeRemaining; // how many degrees per second need to move but it will be interpreted as how many degrees per frame (60 frames per seconds
+        zRotate = zRotate * 0.02f;
+        zRotate = -Mathf.Abs(zRotate);
+        //zRotate = zRotate * 1.8f;
+        //zRotate = zRotate / 200;
+    }
+
+
     void Update()
     {
         if (timeRemaining > 0)
@@ -20,6 +35,7 @@ public class Timer : MonoBehaviour
             int minutes = Mathf.FloorToInt(timeRemaining / 60);
             int seconds = Mathf.FloorToInt(timeRemaining % 60);
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            //minuteHand.transform.Rotate(0, 0, zRotate);
 
         }
 
@@ -49,6 +65,14 @@ public class Timer : MonoBehaviour
 
     }
 
+    private void FixedUpdate()
+    {
+        if (timeRemaining > 0) 
+        { 
+            minuteHand.transform.Rotate(0, 0, zRotate);
+        }
+        
+    }
     IEnumerator TextColorFlicker()
     { 
         timerText.color = Color.red;
