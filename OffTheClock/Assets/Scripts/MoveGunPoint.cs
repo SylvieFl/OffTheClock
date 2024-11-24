@@ -33,5 +33,16 @@ public class MoveGunPoint : MonoBehaviour
         {
             Instantiate(bullet, BulletTransform.position, Quaternion.identity);
         }
+
+        if (rotZ < -90 || rotZ > 90)
+        {
+            GetComponentInChildren<SpriteRenderer>().flipY = true;
+        }
+        else
+        {
+            GetComponentInChildren<SpriteRenderer>().flipY = false;
+        }
+
+            Debug.Log(rotZ);
     }
 }
