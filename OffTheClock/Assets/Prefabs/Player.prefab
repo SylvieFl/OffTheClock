@@ -206,7 +206,7 @@ MonoBehaviour:
   BulletTransform: {fileID: 814241118602660306}
   canFire: 0
   timeBetweenFiring: 0
-  stapleSound: {fileID: 0}
+  stapleSound: {fileID: 5709652910045783889}
 --- !u!82 &5709652910045783889
 AudioSource:
   m_ObjectHideFlags: 0
@@ -219,7 +219,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6cc6e16db17a7054eb8d45cd680ce9fa, type: 3}
   m_Resource: {fileID: 8300000, guid: 6cc6e16db17a7054eb8d45cd680ce9fa, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
