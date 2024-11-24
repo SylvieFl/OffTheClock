@@ -363,7 +363,7 @@ MonoBehaviour:
     m_Bits: 128
   groundSpeed: 8
   jumpSpeed: 15.9
-  dashForce: 23
+  dashForce: 35.6
   groundDecay: 0.875
   gravityDecay: 1
   dashWaitTime: 0.152
