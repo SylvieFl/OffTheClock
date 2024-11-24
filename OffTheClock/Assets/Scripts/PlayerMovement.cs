@@ -247,7 +247,8 @@ public class PlayerMovement : MonoBehaviour
     { 
     
         lookingRight = !lookingRight;
-        transform.Rotate(0, 180, 0);
+        GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
+        //transform.Rotate(0, 180, 0);
 
     }
 }
