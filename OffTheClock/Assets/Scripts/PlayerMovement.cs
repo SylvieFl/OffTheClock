@@ -107,12 +107,12 @@ public class PlayerMovement : MonoBehaviour
                 //StopCoroutine(JumpEnd());
                 
                 //StopAllCoroutines();
-                //animator.SetBool("isJumping", false);
-                StartCoroutine(CoPerformJump());
+                animator.SetBool("isJumping", false);
+                StartCoroutine(CoPerformDoubleJump());
                 //StartCoroutine(DoubleJump());
 
                 //body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
-                canDoubleJump = false;
+                //canDoubleJump = false;
                 
             }
             
@@ -182,9 +182,24 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator CoPerformJump()
     {
         body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
+        canDoubleJump = true;
         animator.SetBool("isJumping", true);
         isPerformingJump = true;
         while(grounded)
+        {
+            yield return null;
+        }
+        isPerformingJump = false;
+    }
+
+    IEnumerator CoPerformDoubleJump()
+    {
+        body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
+        canDoubleJump = false;
+        yield return new WaitForSeconds(0.01f);
+        animator.SetBool("isJumping", true);
+        isPerformingJump = true;
+        while (grounded)
         {
             yield return null;
         }
