@@ -9,7 +9,6 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     public LayerMask layerMask;
     public GameObject BossBullet;
-    private bool chargingLaser = true;
     private bool canFire = true;
     //public Animator animator;
     public LineRenderer lineRenderer;
@@ -26,7 +25,7 @@ public class Boss : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 direction = GameObject.Find("Player").transform.position - transform.position;
 
@@ -69,7 +68,7 @@ public class Boss : MonoBehaviour
             lineRenderer.endWidth = laserLevel;
             canFire = true;
         }
-        laserLevel -= 0.0015f;
+        laserLevel -= 0.008f;
         //Debug.Log(laserLevel);
         //Debug.DrawRay(transform.position, direction);
 
@@ -110,7 +109,6 @@ public class Boss : MonoBehaviour
 
         lineRenderer.startWidth = 1f;
         lineRenderer.endWidth = 1f;
-        chargingLaser = true;
         //ableToShoot = true;
         //animator.SetBool("IsShooting", false);
     }

@@ -12,6 +12,8 @@ public class MoveGunPoint : MonoBehaviour
     public bool canFire;
     private float timer;
     public float timeBetweenFiring;
+
+    public AudioSource stapleSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class MoveGunPoint : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            stapleSound.Play();
             Instantiate(bullet, BulletTransform.position, Quaternion.identity);
         }
 
