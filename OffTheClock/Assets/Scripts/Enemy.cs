@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public RawImage noDash;
+    public AudioSource deathSound;
     
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,9 @@ public class Enemy : MonoBehaviour
             {
                 playerMovement.canDash = true;
                 noDash.enabled = false;
+                deathSound.Play();
                 //Debug.Log(playerMovement.canDash);
+
                 Destroy(gameObject);
             }
         }

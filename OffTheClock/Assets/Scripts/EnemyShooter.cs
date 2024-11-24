@@ -12,6 +12,7 @@ public class EnemyShooter : MonoBehaviour
     private bool ableToShoot = true;
     public Animator animator;
     public AudioSource shootSound;
+    public AudioSource deathSound;
 
     public int health = 5;
 
@@ -43,6 +44,7 @@ public class EnemyShooter : MonoBehaviour
         {
             GameObject.Find("Player").GetComponent<PlayerMovement>().canDash = true;
             GameObject.Find("DashEmpty").GetComponent<RawImage>().enabled = false;
+            deathSound.Play();
             //Debug.Log(health);
             Destroy(gameObject);
         }
