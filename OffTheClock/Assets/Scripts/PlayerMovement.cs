@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -31,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
 
     float xInput;
     float yInput;
+
+    private bool isPerformingJump = false;
 
     // Update is called once per frame
     void Update()
@@ -93,17 +96,19 @@ public class PlayerMovement : MonoBehaviour
         {
             if (grounded)
             {
-                body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
-                animator.SetBool("isJumping", true);
-                StartCoroutine(JumpEnd());
+
+                StartCoroutine(CoPerformJump());
+                //body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
+                //animator.SetBool("isJumping", true);
+                //StartCoroutine(JumpEnd());
             }
             else if (canDoubleJump)
             {
-                StopCoroutine(JumpEnd());
+                //StopCoroutine(JumpEnd());
                 
                 //StopAllCoroutines();
-                animator.SetBool("isJumping", false);
-                StartCoroutine(DoubleJump());
+                //animator.SetBool("isJumping", false);
+                //StartCoroutine(DoubleJump());
                 
                 body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
                 canDoubleJump = false;
@@ -116,7 +121,16 @@ public class PlayerMovement : MonoBehaviour
     void CheckGround()
     {
         grounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundMask).Length > 0;
-        if (grounded) canDoubleJump = false;
+        if(isPerformingJump)
+        {
+            return;
+        }
+        if (grounded)
+        {
+            Debug.Log("grounded: ");
+            canDoubleJump = false;
+            animator.SetBool("isJumping", false);
+        }
     }
 
     void ApplyFriction()
@@ -163,6 +177,19 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isJumping", false);
 
     }
+    
+    IEnumerator CoPerformJump()
+    {
+        body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
+        animator.SetBool("isJumping", true);
+        isPerformingJump = true;
+        while(grounded)
+        {
+            yield return null;
+        }
+        isPerformingJump = false;
+    }
+
 
     private void FlipCharacter()
     {
