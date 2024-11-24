@@ -27,9 +27,9 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Enemy") || (collision.gameObject.CompareTag("ShooterEnemy")))
         {
-            if (collision.gameObject.name == "ShooterEnemy")
+            if (collision.gameObject.CompareTag("ShooterEnemy"))
             {
                 collision.GetComponent<EnemyShooter>().health -= 1;
                 if (collision.GetComponent<EnemyShooter>().health < 1)
