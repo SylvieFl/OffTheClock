@@ -52,37 +52,37 @@ public class Timer : MonoBehaviour
     IEnumerator TextColorFlicker()
     { 
         timerText.color = Color.red;
-        timerText.fontSize = 120;
+        timerText.fontSize = 90;
         Debug.Log("Red");
 
         yield return new WaitForSeconds(1f);
 
         timerText.color = Color.white;
-        timerText.fontSize = 100;
+        timerText.fontSize = 80;
         Debug.Log("White");
 
         yield return new WaitForSeconds(1f);
 
         timerText.color = Color.red;
-        timerText.fontSize = 120;
+        timerText.fontSize = 90;
         Debug.Log("Red");
 
         yield return new WaitForSeconds(1f);
 
         timerText.color = Color.white;
-        timerText.fontSize = 100;
+        timerText.fontSize = 80;
         Debug.Log("White");
 
         yield return new WaitForSeconds(1f);
 
         timerText.color = Color.red;
-        timerText.fontSize = 120;
+        timerText.fontSize = 90;
         Debug.Log("Red");
 
         yield return new WaitForSeconds(1f);
 
         timerText.color = Color.white;
-        timerText.fontSize = 100;
+        timerText.fontSize = 80;
         Debug.Log("White");
 
         yield return new WaitForSeconds(1f);

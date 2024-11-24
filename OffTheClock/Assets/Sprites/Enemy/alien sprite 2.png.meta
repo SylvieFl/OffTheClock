@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien sprite 2_0: -8777147117213723552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
