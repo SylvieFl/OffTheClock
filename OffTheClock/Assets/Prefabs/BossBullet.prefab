@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 71.4
+  destination: {x: 0, y: 0}
 --- !u!212 &1747853983618718336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -174,7 +175,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 165
-  m_Time: 3.9
+  m_Time: 1.96
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3

@@ -10,6 +10,7 @@ public class BossBullet : MonoBehaviour
     private Rigidbody2D rb;
     public float force;
     public Vector2 destination;
+    private bool canHurt = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +29,23 @@ public class BossBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && canHurt)
         {
             //Debug.
             collision.GetComponentInParent<PlayerMovement>().Hurt();
+            canHurt = false;
+            StartCoroutine(waiter());
+
             //Destroy(gameObject);
         }
         //else if (collision.gameObject.CompareTag("Ground"))
         //{
             //Destroy(gameObject);
         //}
+    }
+    IEnumerator waiter()
+    {
+        yield return new WaitForSeconds(0.5f);
+        canHurt = true;
     }
 }
