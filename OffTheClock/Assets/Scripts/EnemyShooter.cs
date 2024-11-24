@@ -24,7 +24,7 @@ public class EnemyShooter : MonoBehaviour
         Vector3 direction = GameObject.Find("Player").transform.position - transform.position;
 
         RaycastHit2D ray = Physics2D.Raycast(transform.position, direction, Mathf.Infinity, layerMask);
-        //Debug.DrawRay(transform.position, direction);
+        Debug.DrawRay(transform.position, direction);
 
         if (ray.collider.gameObject.CompareTag("Player") && ableToShoot)
         {

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3a3b1de3e7a8f3e4d840ae3014d63e8a
+guid: 86dd25c45de1bf44b98cb0bbdd50c9b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -877836972107657617
-    second: Grey BGOG_0
+      213: 6735621054083989832
+    second: Yellow BG_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +84,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -165,13 +165,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grey BGOG_0
+      name: Yellow BG_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 832
-        height: 832
+        width: 3840
+        height: 1920
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6e81d2cceb41d3f0800000000000000
-      internalID: -877836972107657617
+      spriteID: 841815e69abb97d50800000000000000
+      internalID: 6735621054083989832
       vertices: []
       indices: 
       edges: []
@@ -195,8 +195,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Grey BGOG_0: -877836972107657617
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
