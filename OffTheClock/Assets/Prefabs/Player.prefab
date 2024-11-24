@@ -263,7 +263,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   groundSpeed: 8
-  jumpSpeed: 15
+  jumpSpeed: 15.9
   dashForce: 23
   groundDecay: 0.875
   gravityDecay: 1
@@ -274,6 +274,7 @@ MonoBehaviour:
   inControl: 1
   animator: {fileID: 806908728839217290}
   noDash: {fileID: 0}
+  gameOverScript: {fileID: 0}
   health: 3
 --- !u!50 &2230350131632333902
 Rigidbody2D:
