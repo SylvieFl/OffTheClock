@@ -155,6 +155,7 @@ public class PlayerMovement : MonoBehaviour
         gravityDecay = 1;
         inControl = true;
         trailRenderer.emitting = false;
+        animator.SetBool("isDashing", false);
     }
 
     IEnumerator JumpEnd()
