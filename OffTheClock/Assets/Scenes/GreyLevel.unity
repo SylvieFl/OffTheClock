@@ -21707,6 +21707,10 @@ PrefabInstance:
       propertyPath: trailRenderer
       value: 
       objectReference: {fileID: 1317267133}
+    - target: {fileID: 5996386097989561389, guid: 198989c86284cbb45841df63c1c6578b, type: 3}
+      propertyPath: gameOverScript
+      value: 
+      objectReference: {fileID: 1273185784}
     - target: {fileID: 6146875626636753794, guid: 198989c86284cbb45841df63c1c6578b, type: 3}
       propertyPath: m_Name
       value: Player

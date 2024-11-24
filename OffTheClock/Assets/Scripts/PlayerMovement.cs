@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     
     public RawImage noDash;
 
+    public GameOver gameOverScript;
+
 
     float xInput;
     float yInput;
@@ -53,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (health < 1)
         {
-            Debug.Log("GAME OVER");
+            gameOverScript.GameOverUI();
+            //Debug.Log("GAME OVER");
         }
     }
 

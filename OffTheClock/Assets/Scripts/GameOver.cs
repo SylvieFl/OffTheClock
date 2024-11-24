@@ -10,6 +10,11 @@ public class GameOver : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject player;
     
+    public int lives;
+    public RawImage fullLife;
+    public RawImage twoLife;
+    public RawImage oneLife;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +24,23 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        lives = player.GetComponent<PlayerMovement>().health;
+        //Debug.Log(lives);
+
+        if (lives == 2)
+        { 
+            fullLife.enabled = false;
+        }
+
+        if (lives == 1)
+        {
+            twoLife.enabled = false;
+        }
+
+        if (lives == 0)
+        {
+            oneLife.enabled = false;
+        }
     }
 
     public void GameOverUI()
