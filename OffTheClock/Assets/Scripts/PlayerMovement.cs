@@ -108,9 +108,10 @@ public class PlayerMovement : MonoBehaviour
                 
                 //StopAllCoroutines();
                 //animator.SetBool("isJumping", false);
+                StartCoroutine(CoPerformJump());
                 //StartCoroutine(DoubleJump());
-                
-                body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
+
+                //body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
                 canDoubleJump = false;
                 
             }
