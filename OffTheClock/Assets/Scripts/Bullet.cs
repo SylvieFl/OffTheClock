@@ -28,6 +28,10 @@ public class Bullet : MonoBehaviour
         //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Enemy"))
         {
+            if (collision.gameObject.name == "ShooterEnemy")
+            {
+                collision.GetComponent<EnemyShooter>().health -= 1;
+            }
             Destroy(gameObject);
         }
         

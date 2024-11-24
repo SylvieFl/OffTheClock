@@ -10,6 +10,9 @@ public class EnemyShooter : MonoBehaviour
     public GameObject EnemyBullet;
     private bool ableToShoot = true;
     public Animator animator;
+
+    public int health = 5;
+
     void Start()
     {
         
@@ -27,6 +30,12 @@ public class EnemyShooter : MonoBehaviour
         {
             Instantiate(EnemyBullet, transform.position + (direction.normalized * 3), Quaternion.identity);
             StartCoroutine(waiter());
+        }
+
+        if (health < 1)
+        {
+            //Debug.Log(health);
+           Destroy(gameObject);
         }
     }
 
