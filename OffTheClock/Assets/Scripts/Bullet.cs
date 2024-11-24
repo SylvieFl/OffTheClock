@@ -32,11 +32,6 @@ public class Bullet : MonoBehaviour
             if (collision.gameObject.CompareTag("ShooterEnemy"))
             {
                 collision.GetComponent<EnemyShooter>().health -= 1;
-                if (collision.GetComponent<EnemyShooter>().health < 1)
-                {
-                    PlayerMovement playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
-                    playerMovement.canDash = true;
-                }
                 Color color = collision.GetComponent<SpriteRenderer>().color;
                 //color.r -= 0.1f;
                 color.b -= 0.1f;

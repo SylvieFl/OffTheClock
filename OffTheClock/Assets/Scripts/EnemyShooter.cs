@@ -40,6 +40,7 @@ public class EnemyShooter : MonoBehaviour
 
         if (health < 1)
         {
+            GameObject.Find("Player").GetComponent<PlayerMovement>().canDash = true;
             //Debug.Log(health);
             Destroy(gameObject);
         }
