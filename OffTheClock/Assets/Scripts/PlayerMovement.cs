@@ -35,16 +35,22 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isPerformingJump = false;
 
+    public int health = 3;
+
     // Update is called once per frame
     void Update()
     {
-        
         if (inControl)
         {
             GetInput();
             MoveWithInput();
             FlipCharacter();
             animator.SetFloat("Speed", Mathf.Abs(xInput));
+        }
+
+        if (health < 1)
+        {
+            Debug.Log("GAME OVER");
         }
     }
 
