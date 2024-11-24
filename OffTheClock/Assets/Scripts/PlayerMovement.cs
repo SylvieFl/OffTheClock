@@ -58,6 +58,14 @@ public class PlayerMovement : MonoBehaviour
             gameOverScript.GameOverUI();
             //Debug.Log("GAME OVER");
         }
+
+        if (GetComponent<SpriteRenderer>().color.g < 1.0f)
+        {
+            Color currentColor = GetComponent<SpriteRenderer>().color;
+            currentColor.g += 0.01f;
+            currentColor.b += 0.01f;
+            GetComponent<SpriteRenderer>().color = currentColor;
+        }
     }
 
     private void FixedUpdate()
@@ -242,13 +250,25 @@ public class PlayerMovement : MonoBehaviour
         }
     
     }
-
     private void Flip()
     { 
     
         lookingRight = !lookingRight;
         GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
         //transform.Rotate(0, 180, 0);
+
+    }
+
+    public void Hurt()
+    {
+        //Debug.Log("Hurt");
+        health -= 1;
+        //float t = 0;
+        //while (t < 1)
+        //{
+        GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.4f, 0.4f);
+            //t += 0.05f;
+        //}
 
     }
 }

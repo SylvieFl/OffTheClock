@@ -27,7 +27,7 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.GetComponentInParent<PlayerMovement>().health -= 1;
+            collision.GetComponentInParent<PlayerMovement>().Hurt();
             Destroy(gameObject);
         }
         else if (collision.gameObject.CompareTag("Ground"))

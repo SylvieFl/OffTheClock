@@ -52,7 +52,7 @@ public class GameOver : MonoBehaviour
     public void RestartButton()
     {
 
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     }
 
