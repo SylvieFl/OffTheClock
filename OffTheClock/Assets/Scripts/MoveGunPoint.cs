@@ -43,6 +43,6 @@ public class MoveGunPoint : MonoBehaviour
             GetComponentInChildren<SpriteRenderer>().flipY = false;
         }
 
-            Debug.Log(rotZ);
+            //Debug.Log(rotZ);
     }
 }

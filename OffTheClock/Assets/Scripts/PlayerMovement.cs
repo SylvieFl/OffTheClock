@@ -128,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (grounded)
         {
-            Debug.Log("grounded: ");
+            //Debug.Log("grounded: ");
             canDoubleJump = false;
             animator.SetBool("isJumping", false);
         }
