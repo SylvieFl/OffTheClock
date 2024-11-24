@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Windows;
 
 public class EnemyShooter : MonoBehaviour
@@ -41,6 +42,7 @@ public class EnemyShooter : MonoBehaviour
         if (health < 1)
         {
             GameObject.Find("Player").GetComponent<PlayerMovement>().canDash = true;
+            GameObject.Find("DashEmpty").GetComponent<RawImage>().enabled = false;
             //Debug.Log(health);
             Destroy(gameObject);
         }
