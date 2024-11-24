@@ -10,7 +10,7 @@ public class SceneChangerScript : MonoBehaviour
     public void ChangeScene(int buildIndex)
     {
 
-        SceneManager.LoadScene("GreyLevel");
+        SceneManager.LoadScene(buildIndex);
 
     }
 
