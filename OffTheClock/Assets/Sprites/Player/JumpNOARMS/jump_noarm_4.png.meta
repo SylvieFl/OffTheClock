@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 731c8d60161cba940b161e3586517038
+guid: dc27a263ea3d3104c9c6c4255126e829
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3414813336358557383
-    second: idle_4_0
+      213: 1898150006137772487
+    second: jump_noarm_4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_4_0
+      name: jump_noarm_4_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 4
-        width: 22
-        height: 49
+        x: 1
+        y: 7
+        width: 41
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 939e410fc552c90d0800000000000000
-      internalID: -3414813336358557383
+      spriteID: 7c95f3eaf55975a10800000000000000
+      internalID: 1898150006137772487
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle_4_0: -3414813336358557383
+      jump_noarm_4_0: 1898150006137772487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
