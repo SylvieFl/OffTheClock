@@ -8,6 +8,7 @@ public class GameOver : MonoBehaviour
 {
 
     public GameObject gameOverScreen;
+    public GameObject player;
     
     // Start is called before the first frame update
     void Start()
@@ -24,12 +25,13 @@ public class GameOver : MonoBehaviour
     public void GameOverUI()
     { 
         gameOverScreen.SetActive(true);
+        player.SetActive(false);
     }
 
     public void RestartButton()
     {
 
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
 
     }
 

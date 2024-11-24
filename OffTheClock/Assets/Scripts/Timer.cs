@@ -12,18 +12,18 @@ public class Timer : MonoBehaviour
     public RawImage minuteHand;
     public float totalFramesPerSecond;
     public float zRotate;
-    //public Vector3 rotatePerFrame;
+    
 
     public GameOver gameOverScript;
+    
 
     private void Start()
     {
-        //totalFramesPerSecond = timeRemaining * 144;
-        zRotate = 360/timeRemaining; // how many degrees per second need to move but it will be interpreted as how many degrees per frame (60 frames per seconds
+        
+        zRotate = 360/timeRemaining;
         zRotate = zRotate * 0.02f;
         zRotate = -Mathf.Abs(zRotate);
-        //zRotate = zRotate * 1.8f;
-        //zRotate = zRotate / 200;
+        
     }
 
 
@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour
             int minutes = Mathf.FloorToInt(timeRemaining / 60);
             int seconds = Mathf.FloorToInt(timeRemaining % 60);
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-            //minuteHand.transform.Rotate(0, 0, zRotate);
+            
 
         }
 
@@ -59,7 +59,7 @@ public class Timer : MonoBehaviour
             timerText.text = "00:00";
             gameOverScript.GameOverUI();
 
-            //Add Game Over UI
+            
         }
         
 

@@ -4,6 +4,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     private bool lookingRight = true;
 
     public Animator animator;
+    
+    public RawImage noDash;
 
 
     float xInput;
@@ -82,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
         body.AddForce(new Vector2(input, 0) * dashForce, ForceMode2D.Impulse);
         inControl = false;
         canDash = false;
+        noDash.enabled = true;
         trailRenderer.emitting = true;
         Vector3 currentScale = transform.localScale;
         currentScale.x = 1.25f;
