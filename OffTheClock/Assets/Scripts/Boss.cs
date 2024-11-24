@@ -7,17 +7,19 @@ public class Boss : MonoBehaviour
 {
     // Start is called before the first frame update
     public LayerMask layerMask;
-    //public GameObject EnemyBullet;
-    private bool ableToShoot = true;
+    public GameObject BossBullet;
+    private bool chargingLaser = true;
+    private bool canFire = true;
     //public Animator animator;
     public LineRenderer lineRenderer;
+    private float laserLevel = 1f;
 
     public int health = 5;
 
     void Start()
     {
-        lineRenderer.startWidth = 1f;
-        lineRenderer.endWidth = 1f;
+        lineRenderer.startWidth = laserLevel;
+        lineRenderer.endWidth = laserLevel;
     }
 
     // Update is called once per frame
@@ -27,11 +29,36 @@ public class Boss : MonoBehaviour
 
         RaycastHit2D ray = Physics2D.Raycast(transform.position, direction, Mathf.Infinity, layerMask);
 
-        lineRenderer.SetPosition(0, transform.position);
-        lineRenderer.SetPosition(1, GameObject.Find("Player").transform.position);
-        Vector3 difference = (GameObject.Find("Player").transform.position - transform.position) * 10f;
+        lineRenderer.SetPosition(0, new Vector3(transform.position.x, transform.position.y, 1));
+        Vector3 playerTransform = GameObject.Find("Player").transform.position;
+        lineRenderer.SetPosition(1, new Vector3(playerTransform.x, playerTransform.y, 1));
+        Vector3 difference = (GameObject.Find("Player").transform.position - transform.position) * 30f;
         difference.z = 1;
         lineRenderer.SetPosition(2, difference);
+
+        if (laserLevel < 0f)
+        {
+            lineRenderer.startWidth = 0f;
+            lineRenderer.endWidth = 0f;
+            if (laserLevel < -0.3 && canFire)
+            {
+                //Debug.Log("FIRE");
+                Instantiate(BossBullet, transform.position + (direction.normalized * 3), Quaternion.identity);
+                canFire = false;
+            }
+            if (laserLevel < -0.8f)
+            {
+                laserLevel = 1f;
+            }
+        }
+        else
+        {
+            lineRenderer.startWidth = laserLevel;
+            lineRenderer.endWidth = laserLevel;
+            canFire = true;
+        }
+        laserLevel -= 0.0015f;
+        //Debug.Log(laserLevel);
         //Debug.DrawRay(transform.position, direction);
 
         //    if (ray.collider.gameObject.CompareTag("Player") && ableToShoot)
@@ -65,10 +92,14 @@ public class Boss : MonoBehaviour
     IEnumerator waiter()
     {
         //animator.SetBool("IsShooting", true);
-        ableToShoot = false;
+        //ableToShoot = false;
         yield return new WaitForSeconds(2.0f);
+        Debug.Log("end");
 
-        ableToShoot = true;
+        lineRenderer.startWidth = 1f;
+        lineRenderer.endWidth = 1f;
+        chargingLaser = true;
+        //ableToShoot = true;
         //animator.SetBool("IsShooting", false);
     }
 }
