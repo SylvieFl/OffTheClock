@@ -55,6 +55,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (health < 1)
         {
+            GameObject.Find("CoffeeUI").SetActive(false);
+            GameObject.Find("DashFull").SetActive(false);
+            noDash.enabled = false;
             gameOverScript.GameOverUI();
             //Debug.Log("GAME OVER");
         }
