@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     [Range(0f, 1f)] public float dashWaitTime;
 
     public bool grounded;
-    public bool canDoubleJump;
+    public bool canDoubleJump = false;
     public bool canDash;
     public bool inControl = true;
 
@@ -183,7 +183,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator CoPerformJump()
     {
         body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
-        canDoubleJump = true;
+        //canDoubleJump = true;
         animator.SetBool("isJumping", true);
         isPerformingJump = true;
         while(grounded)
