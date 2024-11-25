@@ -12,6 +12,8 @@ public class Timer : MonoBehaviour
     public RawImage minuteHand;
     public float totalFramesPerSecond;
     public float zRotate;
+
+    public bool handRotate = true;
     
 
     public GameOver gameOverScript;
@@ -45,9 +47,10 @@ public class Timer : MonoBehaviour
             StartCoroutine(TextColorFlicker());
         }
 
-        if (timeRemaining < 0)
+        if (timeRemaining < 0 || gameOverScript.gameOver == true)
         {
             timerText.text = "00:00";
+            handRotate = false;
             gameOverScript.GameOverUI();
 
             
@@ -58,11 +61,12 @@ public class Timer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (timeRemaining > 0) 
+        if (timeRemaining > 0 && handRotate == true) 
         { 
             minuteHand.transform.Rotate(0, 0, zRotate);
         }
-        
+
+
     }
     IEnumerator TextColorFlicker()
     { 

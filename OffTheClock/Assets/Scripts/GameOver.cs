@@ -11,6 +11,7 @@ public class GameOver : MonoBehaviour
     public GameObject player;
     
     public int lives;
+    public bool gameOver;
     public RawImage fullLife;
     public RawImage twoLife;
     public RawImage oneLife;
@@ -40,6 +41,7 @@ public class GameOver : MonoBehaviour
         if (lives == 0)
         {
             oneLife.enabled = false;
+            gameOver = true;
         }
     }
 
