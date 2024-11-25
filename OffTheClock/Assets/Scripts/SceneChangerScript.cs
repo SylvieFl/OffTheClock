@@ -18,9 +18,12 @@ public class SceneChangerScript : MonoBehaviour
     {
         //playerLevel++;
         //Debug.Log(playerLevel);
-
-        SceneManager.LoadScene(levelToChangeTo);
-        GameObject.Find("Player").GetComponent<PlayerMovement>().health = 3;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(levelToChangeTo);
+            GameObject.Find("Player").GetComponent<PlayerMovement>().health = 3;
+        }
+        
     }
 
     public void Update()
