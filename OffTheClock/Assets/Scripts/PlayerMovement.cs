@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
 
     public GameOver gameOverScript;
 
+    public AudioSource dashNoise;
+
 
     float xInput;
     float yInput;
@@ -90,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Dash(float input)
     {
+        dashNoise.Play();
         StopAllCoroutines();
         xInput = 0;
         yInput = 0;
