@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowSlime_Drip_0: -591188036947768797
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

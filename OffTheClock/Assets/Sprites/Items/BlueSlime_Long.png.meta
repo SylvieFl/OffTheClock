@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueSlime_Long_0: 1174436608980635603
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
