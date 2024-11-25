@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 44b2669245b36fb4f8fce46d98c1bb16
+guid: 5ed7f00b23dee9948a0e42affcf09760
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1850988681521255122
-    second: Coffee_0
+      213: 5481919849797688533
+    second: Cabinet_0
   - first:
-      213: -7134575736312797528
-    second: Coffee_1
+      213: 9051239656785472935
+    second: Cabinet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -168,13 +168,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coffee_0
+      name: Cabinet_0
       rect:
         serializedVersion: 2
-        x: 441
-        y: 254
-        width: 410
-        height: 393
+        x: 0
+        y: 84
+        width: 18
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2d28a2e997ff46e0800000000000000
-      internalID: -1850988681521255122
+      spriteID: 5dc9a561f01b31c40800000000000000
+      internalID: 5481919849797688533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coffee_1
+      name: Cabinet_1
       rect:
         serializedVersion: 2
-        x: 1155
-        y: 560
-        width: 19
-        height: 53
+        x: 628
+        y: 84
+        width: 206
+        height: 648
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a664fd1b25ecfc90800000000000000
-      internalID: -7134575736312797528
+      spriteID: 7ad60a723867c9d70800000000000000
+      internalID: 9051239656785472935
       vertices: []
       indices: 
       edges: []
@@ -220,8 +220,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Coffee_0: -1850988681521255122
-      Coffee_1: -7134575736312797528
+      Cabinet_0: 5481919849797688533
+      Cabinet_1: 9051239656785472935
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

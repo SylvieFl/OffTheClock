@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 44b2669245b36fb4f8fce46d98c1bb16
+guid: 7e89743d25c548740a829d4f38873712
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1850988681521255122
-    second: Coffee_0
+      213: -2265252885895481736
+    second: Slime_Drip_0
   - first:
-      213: -7134575736312797528
-    second: Coffee_1
+      213: 6654000101663756234
+    second: Slime_Drip_1
+  - first:
+      213: 180786758281028337
+    second: Slime_Drip_2
+  - first:
+      213: 7327449339110314434
+    second: Slime_Drip_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -168,13 +174,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coffee_0
+      name: Slime_Drip_0
       rect:
         serializedVersion: 2
-        x: 441
-        y: 254
-        width: 410
-        height: 393
+        x: 1079
+        y: 265
+        width: 78
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2d28a2e997ff46e0800000000000000
-      internalID: -1850988681521255122
+      spriteID: 87675c980843090e0800000000000000
+      internalID: -2265252885895481736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coffee_1
+      name: Slime_Drip_1
       rect:
         serializedVersion: 2
-        x: 1155
-        y: 560
-        width: 19
-        height: 53
+        x: 1113
+        y: 358
+        width: 9
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +209,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a664fd1b25ecfc90800000000000000
-      internalID: -7134575736312797528
+      spriteID: acfc41b86d1c75c50800000000000000
+      internalID: 6654000101663756234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Drip_2
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 307
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f26f6b4998428200800000000000000
+      internalID: 180786758281028337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Drip_3
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 259
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c15757f95450b560800000000000000
+      internalID: 7327449339110314434
       vertices: []
       indices: 
       edges: []
@@ -220,8 +268,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Coffee_0: -1850988681521255122
-      Coffee_1: -7134575736312797528
+      Slime_Drip_0: -2265252885895481736
+      Slime_Drip_1: 6654000101663756234
+      Slime_Drip_2: 180786758281028337
+      Slime_Drip_3: 7327449339110314434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
