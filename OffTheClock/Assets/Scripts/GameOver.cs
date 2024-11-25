@@ -61,8 +61,8 @@ public class GameOver : MonoBehaviour
     public void QuitButton()
     {
         
-        SceneManager.LoadScene(0);
-        //Application.Quit();
+        //SceneManager.LoadScene(0);
+        Application.Quit();
 
     }
 }
